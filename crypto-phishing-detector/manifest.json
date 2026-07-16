@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Crypto Phishing Detector",
+  "version": "1.0",
+  "description": "Detects cryptocurrency-related phishing attempts on web pages.",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

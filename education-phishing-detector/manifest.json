@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Education Phishing Detector",
+  "version": "1.0",
+  "description": "Detects education-related phishing attempts on web pages.",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
